@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab frontend + backend</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Ripley</li>
+            <li>Home</li>
+            <li id="li_registro">Registro</li>
+        </ul>
+    </header>
+    <div class="container">
+        <section>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Registro de nuevo cliente</h3>
+                </div>
+            </div>
+            <form id="form_registro_cliente">
+                <div class="row">
+                    <div class="col-md-6" style="text-align: right;">
+                        <label for="username_input">Nombre de usuario:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="username_input" id="username_input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" style="text-align: right;">
+                        <label for="celular_input">Número de celular:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="celular_input" id="celular_input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" style="text-align: right;">
+                        <label for="email_input">Email:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="email_input" id="email_input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" style="text-align: right;">
+                        <label for="password_input">Contraseña:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" name="password_input" id="password_input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center;">
+                        <input type="submit" id="boton_crear_cliente" value="Crear nuevo cliente!">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Ver todos los clientes</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    <input type="submit" id="ver_clientes_boton" value="Ver los clientes!">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <ul id="lista_clientes">
+                    <li>
+                        <p>ID: 1, Nombre: Mati, celular: 12456789, Email: test@gmail.com, Password: test</p>
+                        
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

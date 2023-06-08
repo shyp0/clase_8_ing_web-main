@@ -1,0 +1,29 @@
+header {
+    background-color: black;
+    
+}
+
+header ul {
+    color: white;
+    list-style-type: none;
+    display: flex;
+
+}
+
+header ul li {
+    padding: 1em;
+}
+
+#li_registro {
+    color: red;
+}
+
+section .row {
+    padding-top: 1em;
+}
+
+#lista_clientes {
+    /* list-style-type: none; */
+    padding: 1em;
+    
+}
